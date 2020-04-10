@@ -112,7 +112,38 @@ java虚拟机调用本地方法时提供的内存空间
 
 ##### 堆内存溢出
 
+java.lang.OutOfMemoryError
+
+设置堆内存：-Xmx8m
+
+##### 堆内存诊断
+
+jps：查看当前系统中有哪些java进程
+
+jmap：查看堆内存占用情况，jmap -heap pid
+
+jconsole：图形界面的，多功能的检测工具，可以连续检测
+
+##### 案例：
+
+垃圾回收后内存占用还是很高
+
+jvisualvm：可视化工具（堆转储：dump）
+
 ### 5、方法区
 
 线程共享的区域
 
+##### 方法区内存溢出
+
+jdk1.8：设置元空间大小：-XX:MaxMetaspaceSize=8m
+
+java.lang.OutOfMemoryError: Metaspace
+
+
+
+jdk1.6：设置永久代大小：-XX:MaxPermSize=8m
+
+java.lang.OutOfMemoryError: PermGen space
+
+##### 运行时常量池
