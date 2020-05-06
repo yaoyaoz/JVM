@@ -1,4 +1,4 @@
-package com.yaoyao.day01.j02_memory_overflow;
+package com.yaoyao.day01.j02_stack_overflow;
 
 /**
  * 演示栈内存溢出：java.lang.StackOverflowError

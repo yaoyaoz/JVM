@@ -1,6 +1,5 @@
-package com.yaoyao.day01.j02_memory_overflow;
+package com.yaoyao.day01.j02_stack_overflow;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

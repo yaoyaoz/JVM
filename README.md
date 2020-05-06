@@ -126,7 +126,7 @@ java.lang.OutOfMemoryError
 
 jps：查看当前系统中有哪些java进程
 
-jmap：查看堆内存占用情况，jmap -heap pid
+jmap：查看堆内存占用情况（只能查看某一个时刻），jmap -heap pid
 
 jconsole：图形界面的，多功能的检测工具，可以连续检测
 
