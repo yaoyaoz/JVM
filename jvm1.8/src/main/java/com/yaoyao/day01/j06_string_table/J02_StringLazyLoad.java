@@ -1,4 +1,4 @@
-package com.yaoyao.day01.j01_string_table;
+package com.yaoyao.day01.j06_string_table;
 
 /**
  * 延迟字符串字面量也是【延迟】成为对象的

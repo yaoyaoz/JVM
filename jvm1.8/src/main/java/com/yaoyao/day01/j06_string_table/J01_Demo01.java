@@ -1,4 +1,4 @@
-package com.yaoyao.day01.j01_string_table;
+package com.yaoyao.day01.j06_string_table;
 
 /**
  * 在命令行执行：javap -v J01_Demo01.class

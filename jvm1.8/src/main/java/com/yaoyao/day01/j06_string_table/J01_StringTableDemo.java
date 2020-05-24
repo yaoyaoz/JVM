@@ -1,4 +1,4 @@
-package com.yaoyao.day01.j01_string_table;
+package com.yaoyao.day01.j06_string_table;
 
 /**
  * StringTable面试题
