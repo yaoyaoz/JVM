@@ -5,14 +5,14 @@ import org.junit.Test;
 import java.io.*;
 
 /**
- * StringTable性能调优
+ * StringTable性能调优1
  * -XX:StringTableSize=200000 -XX:+PrintStringTableStatistics
  *
  * 如果系统的常量个数特别多的话，可以适当把StringTableSize这个个数调得特别大
  *
  * Created by yaoyao on 2020-05-24.
  */
-public class J07_StringTableTiaoYou {
+public class J07_StringTableTiaoYou1 {
     public static void main(String[] args) {
         BufferedReader bufr = null;
         try {
