@@ -4,19 +4,14 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 
 /**
- * 直接内存：释放
+ * -XX:+DisableExplicitGC 禁用显示回收直接内存。
+ * 加上之后，执行System.gc()之后，直接内存不会被释放
  *
- * 运行main方法之后，打开任务管理器，按内存大小排序，观察
+ * 执行到"开始释放..."的时候，直接内存也不会释放
  *
- * 执行到了“分配完毕...”之后，就有一个占用1G内存的java进程，
- * 回车之后执行释放，1G的java进程会被释放调。
- *
- * 直接内存的释放原理见后面
- *
- * Created by yaoyao on 2020-06-01.
+ * Created by yaoyao on 2020-06-08.
  */
-public class J03_ByteBufferRelease01 {
-
+public class J05_ByteBufferRelease03 {
     static int _1Gb = 1024 * 1024 * 1024;
 
     public static void main(String[] args) throws IOException {
@@ -25,7 +20,7 @@ public class J03_ByteBufferRelease01 {
         System.in.read();
         System.out.println("开始释放...");
         byteBuffer = null;
-        System.gc();
+        System.gc(); //显示的垃圾回收，Full GC
         System.in.read();
     }
 }
